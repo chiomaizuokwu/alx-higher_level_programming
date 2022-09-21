@@ -1,5 +1,4 @@
-
-i#!/usr/bin/python3
+#!/usr/bin/python3
 for num in range(0, 9):
     for num_1 in range(1, 10):
         if num < num_1:
