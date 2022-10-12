@@ -1,6 +1,4 @@
-#!/usr/bin/python3
-
-
+#!/usr/bin/python
 def magic_calculation(a, b):
     result = 0
 
