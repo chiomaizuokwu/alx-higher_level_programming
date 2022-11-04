@@ -1,20 +1,3 @@
-
-Urgirlempress
-/
-alx-higher_level_programming
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-alx-higher_level_programming/0x0C-python-almost_a_circle/tests/test_base.py
-@Urgirlempress
-Urgirlempress Finished
- 1 contributor
-Executable File  548 lines (440 sloc)  18.1 KB
 #!/usr/bin/python3
 
 """Defines unittests for base.py.
@@ -155,8 +138,7 @@ class TestBase_to_json_string(unittest.TestCase):
 
     def test_to_json_string_empty_list(self):
         self.assertEqual("[]", Base.to_json_string([]))
-
-    def test_to_json_string_none(self):
+def test_to_json_string_none(self):
         self.assertEqual("[]", Base.to_json_string(None))
 
     def test_to_json_string_no_args(self):
@@ -294,8 +276,7 @@ class TestBase_from_json_string(unittest.TestCase):
     def test_from_json_string_no_args(self):
         with self.assertRaises(TypeError):
             Base.from_json_string()
-
-    def test_from_json_string_more_than_one_arg(self):
+def test_from_json_string_more_than_one_arg(self):
         with self.assertRaises(TypeError):
             Base.from_json_string([], 1)
 
@@ -408,8 +389,7 @@ class TestBase_load_from_file(unittest.TestCase):
         Square.save_to_file([s1, s2])
         output = Square.load_from_file()
         self.assertTrue(all(type(obj) == Square for obj in output))
-
-    def test_load_from_file_no_file(self):
+def test_load_from_file_no_file(self):
         output = Square.load_from_file()
         self.assertEqual([], output)
 
